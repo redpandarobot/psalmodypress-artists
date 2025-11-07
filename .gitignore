@@ -41,6 +41,10 @@ ENV/
 # Output data (optional - uncomment if you don't want to track generated assets)
 # data/output/
 
+# Database files
+*.db
+*.db-journal
+
 # OS
 .DS_Store
 Thumbs.db

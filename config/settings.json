@@ -6,7 +6,15 @@
   "paths": {
     "psalms_input": "data/input/psalms",
     "artists_input": "data/input/artists",
-    "output_base": "data/output"
+    "output_base": "data/output",
+    "prompt_database": "data/prompts.db"
+  },
+  "sequence_tracking": {
+    "enabled": true,
+    "base": 36,
+    "sequence_length": 5,
+    "embed_in_titles": true,
+    "title_format": "{title} [{sequence_id}]"
   },
   "generation": {
     "ai_model": "gpt-4",
@@ -24,5 +32,10 @@
     "typography_prompt": "typography_prompt.txt",
     "youtube_channel": "youtube_channel.json",
     "youtube_video": "youtube_video.json"
+  },
+  "asset_naming": {
+    "suno_song": "psalm_{psalm:03d}_{sequence_id}_song",
+    "midjourney_image": "psalm_{psalm:03d}_{sequence_id}_cover",
+    "typography_image": "psalm_{psalm:03d}_{sequence_id}_typography"
   }
 }
