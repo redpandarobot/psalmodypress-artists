@@ -1,0 +1,26 @@
+# Nano-Banana Typography Prompt Template
+
+## Context
+Artist: {{ artist_name }}
+Psalm Number: {{ psalm_number }}
+Key Verse: {{ key_verse }}
+
+## Instructions for Typography Prompt
+Generate a Nano-Banana typography prompt for the key verse:
+
+### Typography Style
+- Font style: {{ font_style }}
+- Text treatment: {{ text_treatment }}
+- Layout: {{ layout }}
+
+### Visual Enhancement
+- Color scheme: {{ color_scheme }}
+- Effects: {{ effects }}
+- Background: {{ background }}
+
+### Composition
+- Emphasis on: {{ emphasis }}
+- Hierarchy: {{ hierarchy }}
+
+## Brand Aesthetic
+{{ brand_vision_summary }}

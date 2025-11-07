@@ -1,0 +1,43 @@
+# YouTube Metadata Template
+
+## Context
+Artist: {{ artist_name }}
+Psalm Number: {{ psalm_number }}
+Psalm Title: {{ psalm_title }}
+
+## YouTube Channel Information
+### Channel Title
+Format: [Artist Name] - Psalmody Press
+
+### Channel Description
+Include:
+- Artist mission and vision
+- Focus on psalm-based worship music
+- Connection to brand identity
+- Call to action (subscribe, etc.)
+
+## YouTube Video Information
+
+### Video Title
+Format: Psalm {{ psalm_number }} - {{ theme }} | {{ artist_name }}
+
+### Video Description
+Structure:
+1. Hook (first 2 lines)
+2. Psalm context and theme
+3. Artist interpretation
+4. Song credits
+5. Links (streaming platforms, website, social)
+6. Hashtags
+
+### Video Tags
+Include:
+- psalm {{ psalm_number }}
+- christian music
+- worship music
+- {{ artist_name }}
+- {{ genre_tags }}
+- biblical music
+- {{ theme_tags }}
+
+Max 500 characters for tags

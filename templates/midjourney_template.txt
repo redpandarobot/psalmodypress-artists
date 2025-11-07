@@ -1,0 +1,31 @@
+# Midjourney Album Cover Art Template
+
+## Context
+Artist: {{ artist_name }}
+Psalm Number: {{ psalm_number }}
+Psalm Theme: {{ psalm_theme }}
+
+## Instructions for Midjourney Prompt
+Generate an album cover art prompt that includes:
+
+### Visual Elements
+- Main subject: {{ main_subject }}
+- Setting/Environment: {{ setting }}
+- Color palette: {{ color_palette }}
+- Mood/Atmosphere: {{ mood }}
+
+### Artistic Style
+- Art style: {{ art_style }}
+- Medium: {{ medium }}
+- Lighting: {{ lighting }}
+
+### Technical Parameters
+- Aspect ratio: --ar 1:1
+- Quality: --q 2
+- Style: --s {{ style_value }}
+
+## Brand Vision Alignment
+{{ brand_vision_summary }}
+
+## Psalm Visual Themes
+{{ visual_themes }}

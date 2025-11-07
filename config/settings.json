@@ -1,0 +1,28 @@
+{
+  "project": {
+    "name": "Psalmody Press Artists",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "psalms_input": "data/input/psalms",
+    "artists_input": "data/input/artists",
+    "output_base": "data/output"
+  },
+  "generation": {
+    "ai_model": "gpt-4",
+    "temperature": 0.7,
+    "max_tokens": 2000
+  },
+  "psalm_naming": {
+    "format": "psalm_{number:03d}.txt",
+    "total_psalms": 150
+  },
+  "output_files": {
+    "suno_lyrics": "suno_lyrics.txt",
+    "suno_prompt": "suno_prompt.txt",
+    "midjourney_prompt": "midjourney_prompt.txt",
+    "typography_prompt": "typography_prompt.txt",
+    "youtube_channel": "youtube_channel.json",
+    "youtube_video": "youtube_video.json"
+  }
+}

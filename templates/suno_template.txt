@@ -1,0 +1,18 @@
+# Suno Lyrics Template
+# This template guides the generation of song lyrics from psalm text
+
+## Context
+Artist: {{ artist_name }}
+Psalm Number: {{ psalm_number }}
+Artist Vision: {{ brand_vision_summary }}
+
+## Psalm Text
+{{ psalm_text }}
+
+## Instructions for Lyrics Generation
+- Adapt the psalm into singable lyrics
+- Maintain the spiritual and emotional essence
+- Consider the artist's musical style: {{ musical_style }}
+- Target length: 2-4 verses + chorus
+- Include natural repetition for chorus
+- Ensure rhyme scheme fits the genre

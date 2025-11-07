@@ -1,0 +1,21 @@
+# Suno Music Generation Prompt Template
+
+## Context
+Artist: {{ artist_name }}
+Psalm Number: {{ psalm_number }}
+Psalm Theme: {{ psalm_theme }}
+
+## Instructions for Music Prompt
+Create a music generation prompt for Suno AI that includes:
+- Genre: {{ genre }}
+- Mood: {{ mood }}
+- Tempo: {{ tempo }}
+- Instrumentation: {{ instrumentation }}
+- Vocal style: {{ vocal_style }}
+- Production style: {{ production_style }}
+
+## Artist Brand Influence
+{{ brand_vision_summary }}
+
+## Psalm Emotional Tone
+{{ emotional_tone }}
