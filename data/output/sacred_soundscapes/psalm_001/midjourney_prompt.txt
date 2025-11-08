@@ -1,0 +1,23 @@
+Sequence ID: 00003
+Psalm: 1
+Artist: sacred_soundscapes
+
+============================================================
+
+FULL PROMPT:
+balanced scales, strong pillars, clear light, Deep blues, warm golds, natural earth tones, Minimalist, ethereal, nature-inspired, photorealistic, cinematic composition, album cover art [00003] --ar 1:1 --q 2 --s 500
+
+BASE DESCRIPTION:
+balanced scales, strong pillars, clear light, Deep blues, warm golds, natural earth tones, Minimalist, ethereal, nature-inspired, photorealistic, cinematic composition, album cover art
+
+PARAMETERS:
+--ar 1:1 --q 2 --s 500
+
+METADATA:
+{
+  "color_palette": "Deep blues, warm golds, natural earth tones",
+  "visual_style": "Minimalist, ethereal, nature-inspired",
+  "aspect_ratio": "1:1",
+  "quality": 2,
+  "stylize": 500
+}
