@@ -1,0 +1,25 @@
+Sequence ID: 0001O
+Psalm: 15
+Artist: PsalmJoy
+
+============================================================
+
+KEY VERSE:
+"A Psalm by David"
+
+TYPOGRAPHY PROMPT:
+Typography design for verse: "A Psalm by David"
+
+Font: Modern serif font, clean and elegant
+Colors: Deep blues, warm golds, earth tones
+Style: Minimalist, ethereal
+Layout: Centered, generous spacing
+Effects: Subtle shadows, elegant serifs
+Background: Minimal, complementary to text
+Overall aesthetic: Beautiful, reverent, artistic
+
+METADATA:
+{
+  "key_verse": "A Psalm by David",
+  "verse_length": 16
+}

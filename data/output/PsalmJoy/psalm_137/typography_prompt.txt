@@ -1,0 +1,25 @@
+Sequence ID: 000F8
+Psalm: 137
+Artist: PsalmJoy
+
+============================================================
+
+KEY VERSE:
+"By the rivers of Babylon, there we sat down"
+
+TYPOGRAPHY PROMPT:
+Typography design for verse: "By the rivers of Babylon, there we sat down"
+
+Font: Modern serif font, clean and elegant
+Colors: Deep blues, warm golds, earth tones
+Style: Minimalist, ethereal
+Layout: Centered, generous spacing
+Effects: Subtle shadows, elegant serifs
+Background: Minimal, complementary to text
+Overall aesthetic: Beautiful, reverent, artistic
+
+METADATA:
+{
+  "key_verse": "By the rivers of Babylon, there we sat down",
+  "verse_length": 43
+}

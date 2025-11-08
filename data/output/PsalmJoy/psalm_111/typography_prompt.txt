@@ -1,0 +1,25 @@
+Sequence ID: 000CC
+Psalm: 111
+Artist: PsalmJoy
+
+============================================================
+
+KEY VERSE:
+"Praise the LORD"
+
+TYPOGRAPHY PROMPT:
+Typography design for verse: "Praise the LORD"
+
+Font: Modern serif font, clean and elegant
+Colors: Deep blues, warm golds, earth tones
+Style: Minimalist, ethereal
+Layout: Centered, generous spacing
+Effects: Subtle shadows, elegant serifs
+Background: Minimal, complementary to text
+Overall aesthetic: Beautiful, reverent, artistic
+
+METADATA:
+{
+  "key_verse": "Praise the LORD",
+  "verse_length": 15
+}

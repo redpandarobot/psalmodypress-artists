@@ -1,0 +1,25 @@
+Sequence ID: 0000S
+Psalm: 7
+Artist: PsalmJoy
+
+============================================================
+
+KEY VERSE:
+"A meditation by David, which he sang to the LORD, concerning the words of Cush, the Benjamite"
+
+TYPOGRAPHY PROMPT:
+Typography design for verse: "A meditation by David, which he sang to the LORD, concerning the words of Cush, the Benjamite"
+
+Font: Modern serif font, clean and elegant
+Colors: Deep blues, warm golds, earth tones
+Style: Minimalist, ethereal
+Layout: Centered, generous spacing
+Effects: Subtle shadows, elegant serifs
+Background: Minimal, complementary to text
+Overall aesthetic: Beautiful, reverent, artistic
+
+METADATA:
+{
+  "key_verse": "A meditation by David, which he sang to the LORD, concerning the words of Cush, the Benjamite",
+  "verse_length": 93
+}

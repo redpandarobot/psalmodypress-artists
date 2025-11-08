@@ -1,0 +1,25 @@
+Sequence ID: 00004
+Psalm: 1
+Artist: PsalmJoy
+
+============================================================
+
+KEY VERSE:
+"Blessed is the man who doesnt walk in the counsel of the wicked"
+
+TYPOGRAPHY PROMPT:
+Typography design for verse: "Blessed is the man who doesnt walk in the counsel of the wicked"
+
+Font: Modern serif font, clean and elegant
+Colors: Deep blues, warm golds, earth tones
+Style: Minimalist, ethereal
+Layout: Centered, generous spacing
+Effects: Subtle shadows, elegant serifs
+Background: Minimal, complementary to text
+Overall aesthetic: Beautiful, reverent, artistic
+
+METADATA:
+{
+  "key_verse": "Blessed is the man who doesnt walk in the counsel of the wicked",
+  "verse_length": 63
+}

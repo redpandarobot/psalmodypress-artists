@@ -1,0 +1,25 @@
+Sequence ID: 000AG
+Psalm: 94
+Artist: PsalmJoy
+
+============================================================
+
+KEY VERSE:
+"LORD, you God to whom vengeance belongs, you God to whom vengeance belongs, shine out"
+
+TYPOGRAPHY PROMPT:
+Typography design for verse: "LORD, you God to whom vengeance belongs, you God to whom vengeance belongs, shine out"
+
+Font: Modern serif font, clean and elegant
+Colors: Deep blues, warm golds, earth tones
+Style: Minimalist, ethereal
+Layout: Centered, generous spacing
+Effects: Subtle shadows, elegant serifs
+Background: Minimal, complementary to text
+Overall aesthetic: Beautiful, reverent, artistic
+
+METADATA:
+{
+  "key_verse": "LORD, you God to whom vengeance belongs, you God to whom vengeance belongs, shine out",
+  "verse_length": 85
+}

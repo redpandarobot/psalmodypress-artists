@@ -1,0 +1,25 @@
+Sequence ID: 000A4
+Psalm: 91
+Artist: PsalmJoy
+
+============================================================
+
+KEY VERSE:
+"He who dwells in the secret place of the Most High will rest in the shadow of the Almighty"
+
+TYPOGRAPHY PROMPT:
+Typography design for verse: "He who dwells in the secret place of the Most High will rest in the shadow of the Almighty"
+
+Font: Modern serif font, clean and elegant
+Colors: Deep blues, warm golds, earth tones
+Style: Minimalist, ethereal
+Layout: Centered, generous spacing
+Effects: Subtle shadows, elegant serifs
+Background: Minimal, complementary to text
+Overall aesthetic: Beautiful, reverent, artistic
+
+METADATA:
+{
+  "key_verse": "He who dwells in the secret place of the Most High will rest in the shadow of the Almighty",
+  "verse_length": 90
+}

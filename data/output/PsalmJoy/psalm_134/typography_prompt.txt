@@ -1,0 +1,25 @@
+Sequence ID: 000EW
+Psalm: 134
+Artist: PsalmJoy
+
+============================================================
+
+KEY VERSE:
+"A Song of Ascents"
+
+TYPOGRAPHY PROMPT:
+Typography design for verse: "A Song of Ascents"
+
+Font: Modern serif font, clean and elegant
+Colors: Deep blues, warm golds, earth tones
+Style: Minimalist, ethereal
+Layout: Centered, generous spacing
+Effects: Subtle shadows, elegant serifs
+Background: Minimal, complementary to text
+Overall aesthetic: Beautiful, reverent, artistic
+
+METADATA:
+{
+  "key_verse": "A Song of Ascents",
+  "verse_length": 17
+}

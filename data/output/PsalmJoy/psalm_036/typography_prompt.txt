@@ -1,0 +1,25 @@
+Sequence ID: 00040
+Psalm: 36
+Artist: PsalmJoy
+
+============================================================
+
+KEY VERSE:
+"For the Chief Musician"
+
+TYPOGRAPHY PROMPT:
+Typography design for verse: "For the Chief Musician"
+
+Font: Modern serif font, clean and elegant
+Colors: Deep blues, warm golds, earth tones
+Style: Minimalist, ethereal
+Layout: Centered, generous spacing
+Effects: Subtle shadows, elegant serifs
+Background: Minimal, complementary to text
+Overall aesthetic: Beautiful, reverent, artistic
+
+METADATA:
+{
+  "key_verse": "For the Chief Musician",
+  "verse_length": 22
+}

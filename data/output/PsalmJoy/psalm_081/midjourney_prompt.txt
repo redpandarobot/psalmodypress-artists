@@ -1,0 +1,21 @@
+Sequence ID: 0008Z
+Psalm: 81
+Artist: PsalmJoy
+
+============================================================
+
+FULL PROMPT:
+radiant light beams, uplifted hands, golden hour, deep blues, warm golds, earth tones, minimalist, ethereal, photorealistic, cinematic composition, album cover art [0008Z] --ar 1:1 --q 2 --s 500
+
+BASE DESCRIPTION:
+radiant light beams, uplifted hands, golden hour, deep blues, warm golds, earth tones, minimalist, ethereal, photorealistic, cinematic composition, album cover art
+
+PARAMETERS:
+--ar 1:1 --q 2 --s 500
+
+METADATA:
+{
+  "aspect_ratio": "1:1",
+  "quality": 2,
+  "stylize": 500
+}

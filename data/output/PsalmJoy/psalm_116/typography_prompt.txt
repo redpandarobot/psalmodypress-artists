@@ -1,0 +1,25 @@
+Sequence ID: 000CW
+Psalm: 116
+Artist: PsalmJoy
+
+============================================================
+
+KEY VERSE:
+"I love the LORD, because he listens to my voice, and my cries for mercy"
+
+TYPOGRAPHY PROMPT:
+Typography design for verse: "I love the LORD, because he listens to my voice, and my cries for mercy"
+
+Font: Modern serif font, clean and elegant
+Colors: Deep blues, warm golds, earth tones
+Style: Minimalist, ethereal
+Layout: Centered, generous spacing
+Effects: Subtle shadows, elegant serifs
+Background: Minimal, complementary to text
+Overall aesthetic: Beautiful, reverent, artistic
+
+METADATA:
+{
+  "key_verse": "I love the LORD, because he listens to my voice, and my cries for mercy",
+  "verse_length": 71
+}
