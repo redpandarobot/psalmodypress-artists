@@ -17,7 +17,8 @@
     "title_format": "{title} [{sequence_id}]"
   },
   "generation": {
-    "ai_model": "gpt-4",
+    "provider": "anthropic",
+    "ai_model": "claude-sonnet-4-20250514",
     "temperature": 0.7,
     "max_tokens": 2000
   },

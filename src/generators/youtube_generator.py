@@ -41,20 +41,37 @@ class YouTubeGenerator:
             self._init_ai_client()
 
     def _init_ai_client(self):
-        """Initialize OpenAI client for AI-powered generation."""
-        try:
-            from openai import OpenAI
-            import os
+        """Initialize AI client (Anthropic Claude or OpenAI) for AI-powered generation."""
+        import os
 
-            api_key = os.getenv('OPENAI_API_KEY')
-            if not api_key:
-                print("Warning: OPENAI_API_KEY not found. Falling back to template-based generation.")
-                self.use_ai = False
-                self.client = None
-            else:
-                self.client = OpenAI(api_key=api_key)
-        except ImportError:
-            print("Warning: openai package not installed. Falling back to template-based generation.")
+        provider = self.config['generation'].get('provider', 'openai')
+
+        try:
+            if provider == 'anthropic':
+                from anthropic import Anthropic
+
+                api_key = os.getenv('ANTHROPIC_API_KEY')
+                if not api_key:
+                    print("Warning: ANTHROPIC_API_KEY not found. Falling back to template-based generation.")
+                    self.use_ai = False
+                    self.client = None
+                else:
+                    self.client = Anthropic(api_key=api_key)
+                    self.provider = 'anthropic'
+            else:  # openai
+                from openai import OpenAI
+
+                api_key = os.getenv('OPENAI_API_KEY')
+                if not api_key:
+                    print("Warning: OPENAI_API_KEY not found. Falling back to template-based generation.")
+                    self.use_ai = False
+                    self.client = None
+                else:
+                    self.client = OpenAI(api_key=api_key)
+                    self.provider = 'openai'
+        except ImportError as e:
+            print(f"Warning: {provider} package not installed. Falling back to template-based generation.")
+            print(f"  Install with: pip install {provider}")
             self.use_ai = False
             self.client = None
 
@@ -146,18 +163,26 @@ Provide:
 2. Channel Description (2-3 paragraphs, engaging, include mission and content focus)
 3. Keywords (10-15 relevant keywords for channel)"""
 
-        response = self.client.chat.completions.create(
-            model=self.config['generation']['ai_model'],
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt}
-            ],
-            temperature=0.7,
-            max_tokens=500
-        )
-
-        # Parse response (expecting structured format)
-        content = response.choices[0].message.content
+        if self.provider == 'anthropic':
+            response = self.client.messages.create(
+                model=self.config['generation']['ai_model'],
+                max_tokens=500,
+                temperature=0.7,
+                system=system_prompt,
+                messages=[{"role": "user", "content": user_prompt}]
+            )
+            content = response.content[0].text
+        else:  # openai
+            response = self.client.chat.completions.create(
+                model=self.config['generation']['ai_model'],
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
+                ],
+                temperature=0.7,
+                max_tokens=500
+            )
+            content = response.choices[0].message.content
 
         # Simple parsing - in production, you'd want more robust parsing
         return {
@@ -217,17 +242,26 @@ Provide:
 2. Description (3 paragraphs: hook, psalm context, artist info, links, hashtags)
 3. Tags (15-20 tags, mix of broad and specific, include "psalm {psalm_data['number']}")"""
 
-        response = self.client.chat.completions.create(
-            model=self.config['generation']['ai_model'],
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt}
-            ],
-            temperature=0.7,
-            max_tokens=600
-        )
-
-        content = response.choices[0].message.content
+        if self.provider == 'anthropic':
+            response = self.client.messages.create(
+                model=self.config['generation']['ai_model'],
+                max_tokens=600,
+                temperature=0.7,
+                system=system_prompt,
+                messages=[{"role": "user", "content": user_prompt}]
+            )
+            content = response.content[0].text
+        else:  # openai
+            response = self.client.chat.completions.create(
+                model=self.config['generation']['ai_model'],
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
+                ],
+                temperature=0.7,
+                max_tokens=600
+            )
+            content = response.choices[0].message.content
 
         # Basic parsing
         return {

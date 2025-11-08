@@ -41,23 +41,39 @@ class TypographyGenerator:
             self._init_ai_client()
 
     def _init_ai_client(self):
-        """Initialize OpenAI client for AI-powered generation."""
-        try:
-            from openai import OpenAI
-            import os
+        """Initialize AI client (Anthropic Claude or OpenAI) for AI-powered generation."""
+        import os
 
-            api_key = os.getenv('OPENAI_API_KEY')
-            if not api_key:
-                print("Warning: OPENAI_API_KEY not found. Falling back to template-based generation.")
-                self.use_ai = False
-                self.client = None
-            else:
-                self.client = OpenAI(api_key=api_key)
-        except ImportError:
-            print("Warning: openai package not installed. Falling back to template-based generation.")
+        provider = self.config['generation'].get('provider', 'openai')
+
+        try:
+            if provider == 'anthropic':
+                from anthropic import Anthropic
+
+                api_key = os.getenv('ANTHROPIC_API_KEY')
+                if not api_key:
+                    print("Warning: ANTHROPIC_API_KEY not found. Falling back to template-based generation.")
+                    self.use_ai = False
+                    self.client = None
+                else:
+                    self.client = Anthropic(api_key=api_key)
+                    self.provider = 'anthropic'
+            else:  # openai
+                from openai import OpenAI
+
+                api_key = os.getenv('OPENAI_API_KEY')
+                if not api_key:
+                    print("Warning: OPENAI_API_KEY not found. Falling back to template-based generation.")
+                    self.use_ai = False
+                    self.client = None
+                else:
+                    self.client = OpenAI(api_key=api_key)
+                    self.provider = 'openai'
+        except ImportError as e:
+            print(f"Warning: {provider} package not installed. Falling back to template-based generation.")
+            print(f"  Install with: pip install {provider}")
             self.use_ai = False
             self.client = None
-
     def generate_prompt(
         self,
         psalm_number: int,
@@ -166,17 +182,26 @@ COLOR PALETTE: {vision_data.get('visual_aesthetic', {}).get('color_palette', 'De
 
 Create a prompt describing how to present this verse beautifully with artistic typography."""
 
-        response = self.client.chat.completions.create(
-            model=self.config['generation']['ai_model'],
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt}
-            ],
-            temperature=0.8,
-            max_tokens=300
-        )
-
-        return response.choices[0].message.content.strip()
+        if self.provider == 'anthropic':
+            response = self.client.messages.create(
+                model=self.config['generation']['ai_model'],
+                max_tokens=300,
+                temperature=0.8,
+                system=system_prompt,
+                messages=[{"role": "user", "content": user_prompt}]
+            )
+            return response.content[0].text.strip()
+        else:  # openai
+            response = self.client.chat.completions.create(
+                model=self.config['generation']['ai_model'],
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
+                ],
+                temperature=0.8,
+                max_tokens=300
+            )
+            return response.choices[0].message.content.strip()
 
     def _generate_template(
         self,
