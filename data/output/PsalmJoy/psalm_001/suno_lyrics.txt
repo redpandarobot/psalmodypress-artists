@@ -1,5 +1,5 @@
-Title: Psalm 1 - Blessed is the man who doesnt [00001]
-Sequence ID: 00001
+Title: Psalm 1 - Blessed is the man who doesnt [000GT]
+Sequence ID: 000GT
 Psalm: 1
 Artist: PsalmJoy
 

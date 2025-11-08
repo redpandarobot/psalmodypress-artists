@@ -1,11 +1,11 @@
-Sequence ID: 00003
+Sequence ID: 000GV
 Psalm: 1
 Artist: PsalmJoy
 
 ============================================================
 
 FULL PROMPT:
-balanced scales, strong pillars, clear light, deep blues, warm golds, earth tones, minimalist, ethereal, photorealistic, cinematic composition, album cover art [00003] --ar 1:1 --q 2 --s 500
+balanced scales, strong pillars, clear light, deep blues, warm golds, earth tones, minimalist, ethereal, photorealistic, cinematic composition, album cover art [000GV] --ar 1:1 --q 2 --s 500
 
 BASE DESCRIPTION:
 balanced scales, strong pillars, clear light, deep blues, warm golds, earth tones, minimalist, ethereal, photorealistic, cinematic composition, album cover art
