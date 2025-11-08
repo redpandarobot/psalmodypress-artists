@@ -56,20 +56,70 @@ psalmodypress-artists/
 
 ## Usage
 
-### Generate Assets for Single Psalm
+### Quick Start - Test with Sample Data
+
 ```bash
-python src/main.py --artist "artist_name" --psalm 1
+# Run test with included sample artist and psalm
+python test_all_generators.py
 ```
 
-### Generate Assets for All 150 Psalms
+This generates all 6 asset types for Psalm 1 using the "sacred_soundscapes" artist and saves them to `data/output/`.
+
+### CLI Commands
+
+The main CLI program (`src/main.py`) provides several commands:
+
+#### Generate Assets for a Single Psalm
 ```bash
-python src/main.py --artist "artist_name" --all
+python src/main.py generate --artist sacred_soundscapes --psalm 23
 ```
 
-### Generate for Multiple Artists
+#### Generate Assets for a Range of Psalms
 ```bash
-python src/main.py --all-artists --all
+# Generate psalms 1-10
+python src/main.py generate --artist sacred_soundscapes --start 1 --end 10
+
+# Generate all 150 psalms
+python src/main.py generate --artist sacred_soundscapes --start 1 --end 150
 ```
+
+#### Enable AI-Powered Generation
+```bash
+# Set your OpenAI API key
+export OPENAI_API_KEY=sk-...
+
+# Use AI for better quality generation
+python src/main.py generate --artist sacred_soundscapes --psalm 23 --use-ai
+```
+
+#### List Available Artists
+```bash
+python src/main.py list-artists
+```
+
+#### List Available Psalms
+```bash
+python src/main.py list-psalms
+```
+
+#### View Sequence Tracking Statistics
+```bash
+python src/main.py stats
+```
+
+### Generation Modes
+
+**Template Mode (Default)**
+- No API key required
+- Uses built-in templates
+- Good for testing and structure
+- Fast and free
+
+**AI Mode (--use-ai)**
+- Requires `OPENAI_API_KEY`
+- Uses GPT-4 for generation
+- Higher quality, more creative output
+- Better adaptation to brand vision
 
 ## Input File Formats
 
